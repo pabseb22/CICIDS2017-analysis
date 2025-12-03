@@ -4,8 +4,8 @@ import subprocess
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
 
-input_pcap = os.path.join(PROJECT_ROOT, "pcap_samples", "Wednesday-workingHours.pcap")
-output_csv = os.path.join(PROJECT_ROOT, "pcap_samples", "extended_ids_export.csv")
+input_pcap = os.path.join(PROJECT_ROOT, "pcap_samples", "Friday-workingHours.pcap")
+output_csv = os.path.join(PROJECT_ROOT, "pcap_samples", "friday_export.csv")
 
 TSHARK = r"C:\Program Files\Wireshark\tshark.exe"
 
