@@ -1,0 +1,2 @@
+Place here your downloaded PCAPs.
+Do NOT commit any PCAP files to GitHub.
