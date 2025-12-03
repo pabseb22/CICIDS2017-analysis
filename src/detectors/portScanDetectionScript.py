@@ -157,6 +157,13 @@ def realtime_plot(metrics, threshold, metric_name, delay=0.1):
         time.sleep(delay)
 
     plt.ioff()
+    
+    # Guardar figura como PNG
+    output_path = os.path.join(PROJECT_ROOT, "figures_friday", "detection", "realtime_detection_portscan.png")
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    plt.savefig(output_path, dpi=300, bbox_inches="tight")
+    print(f"[Guardado]: {output_path}")
+    
     plt.show()
 
 
